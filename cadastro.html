@@ -8,6 +8,7 @@
 		<title>ResiliaFlix</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery.min.js"></script>
 	</head>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,67 +51,99 @@
 				</div>
 			</nav>
 		</header>
-		<main>
-			<div class="row g-3">
-				<div class="col">
-				  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-				</div>
-				<div class="col">
-				  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-				</div>
-			  </div>
-			  <form>
-				<div class="row mb-3">
-				  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-				  <div class="col-sm-10">
-					<input type="email" class="form-control" id="inputEmail3">
-				  </div>
-				</div>
-				<div class="row mb-3">
-				  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-				  <div class="col-sm-10">
-					<input type="password" class="form-control" id="inputPassword3">
-				  </div><form>
-					<div class="row mb-3">
-					  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-					  <div class="col-sm-10">
-						<input type="email" class="form-control" id="inputEmail3">
-					  </div>
+		<main class="main--cadastro mx-auto w-50">
+			<form id="formExemplo" data-toggle="validator" role="form">
+				<div class="row">
+					<div class="form-group col">
+						<label for="textNome" class="control-label">Nome</label>
+						<input id="textNome" class="form-control" placeholder="Digite seu Nome" type="text" required>
 					</div>
-			<form method="get" action=".">
-				<label>Cep:
-				<input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-					   onblur="pesquisacep(this.value);" /></label><br />
-				<label>Rua:
-				<input name="rua" type="text" id="rua" size="60" /></label><br />
-				<label>Bairro:
-				<input name="bairro" type="text" id="bairro" size="40" /></label><br />
-				<label>Cidade:
-				<input name="cidade" type="text" id="cidade" size="40" /></label><br />
-				<label>Estado:
-				<input name="uf" type="text" id="uf" size="2" /></label><br />
-				<label>IBGE:
-				<input name="ibge" type="text" id="ibge" size="8" /></label><br />
-			  </form>
+					<div class="form-group col-auto">
+						<label for="CPF" class="control-label">CPF</label>
+						<input id="campo" class="form-control" placeholder="Digite seu CPF" type="text" name="cpf" maxlength="14" onkeypress="formatar('###.###.###-##', this);" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Somente os números" required>
+					</div>
+				</div>
+								
+				<div class="form-group">
+				  <label for="inputEmail" class="control-label">Email</label>
+				  <input id="inputEmail" class="form-control" placeholder="Digite seu e-mail" type="email" 
+					data-error="Por favor, informe um e-mail correto." required>
+				  <div class="help-block with-errors"></div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col">
+					<label for="inputPassword" class="control-label">Senha</label>
+					<input type="password" class="form-control" id="inputPassword" placeholder="Digite sua senha"  
+						data-minlength="6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mínimo de 6 dígitos"
+						required>
+					</div>
+					<div class="form-group col">
+					<label for="inputConfirm" class="control-label">Confirme a senha</label>
+					<input type="password" class="form-control" id="inputConfirm" placeholder="Confirme sua Senha" 
+						data-match="#inputPassword" data-match-error="Atenção! As senhas não estão iguais." required>
+					<div class="help-block with-errors"></div>
+					</div>
+				</div>
+				
+				<div method="get" action=".">
+					<div class="form-group">
+						<label>Digite seu CEP<input class= "form-control" placeholder= "CEP" name="cep" type="text" id="cep" value="" maxlength="9" size="12" onblur="pesquisacep(this.value);" /></label>
+					</div>
+					<div class="form-group row">
+						<label class = "col">Logradouro<input class= "form-control" name="rua" type="text" id="rua" required/></label>
+						<label class = "col-auto">Número<input class= "form-control" name="número" type="text" id="número" required/></label>
+					</div>
+					<div class="form-group row">
+						<label class = "col">Complemento<input class= "form-control" name="rua" type="text" id="complemento"/></label>
+						<label class = "col">Bairro<input class= "form-control" name="bairro" type="text" id="bairro" required/></label>
+					</div>
+					<div class="form-group row">
+						<label class = "col">Cidade<input class= "form-control" name="cidade" type="text" id="cidade" size="60"/></label>
+						<label class = "col-auto">Estado<input class= "form-control" name="uf" type="text" id="uf" size="4"/></label>
+					</div>								
+							<label id = "IBGE">IBGE:
+							<input name="ibge" type="text" id="ibge" size="8" /></label>
+				</div>
+				
+				<div class="form-group mb-3">
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" data-error="Você deve marcar este campo!" required> Marque aqui se você está de acordo com a nossa <a style="color:black;" href="#">política de privacidade.</a>
+					  </label>
+					  <div class="help-block with-errors"></div>
+					</div>
+				</div>
+				<div class="cadastro--planos d-flex flex-column flex-md-row justify-content-md-around">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+						<label class="form-check-label" for="inlineRadio1">Plano Básico</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+						<label class="form-check-label" for="inlineRadio2">Plano Completo</label>
+					</div>
+				</div>
+			  	<div class="form-group mt-3">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+			  	</div>
+
+			</form>
 		</main>
 		<footer>
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container-fluid d-flex justify-content-evenly">
-					<!-- <a class="navbar-brand" href="#">Navbar</a> -->
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-					<div class="footer collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarNavAltMarkup">
-						<div class="navbar-nav">
-							<a class="nav-link" href="#">Home</a>
-							<a class="nav-link" href="#">Filmes</a>
-							<a class="nav-link" href="#">Contato</a>
-						</div>
+			<nav class="navbar mt-3 pt-3 navbar-light container-fluid">
+				<div class="footer position-absolute top-50 start-50 translate-middle" id="navbarNavAltMarkup">
+					<div class="navbar-nav d-flex flex-row justify-content-around pt-3 mt-3">
+						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="#">Filmes</a>
+						<a class="nav-link" href="#">Contato</a>
 					</div>
 				</div>
 			</nav>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha512-dTu0vJs5ndrd3kPwnYixvOCsvef5SGYW/zSSK4bcjRBcZHzqThq7pt7PmCv55yb8iBvni0TSeIDV8RYKjZL36A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="viacep.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js" integrity="sha512-Mf4TMPxK1TE3jNpbt6cFIM9Rz+Ezs+mvG6SvEKq2ZYEAix8QNtbseSccunI4efVNtvfzrRmd8vVwRRBgYMtfnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</body>
 </html>
