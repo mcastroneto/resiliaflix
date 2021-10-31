@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  .home--filmes {
+    width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .home--filmes {
+    max-width: 767px;
+  }
+  .resiliaflix {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#navbarNavAltMarkup {
+  width: 50%;
+}
+#IBGE {
+  display: none;
+}
