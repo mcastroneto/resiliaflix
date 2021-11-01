@@ -79,10 +79,10 @@
       </nav>
     </header>
 
-    <main class="container">  
+    <main class="d-flex justify-content-center">  
 
-      <div class="col-lg-4 col-md-12 col-sm-12 col-12 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
-        <div id="form" class="col-lg-12 col-md-12 col-sm-12 col-12 mx-lg-auto mx-md-auto -x-ms-auto>
+      <div  class="form-group">
+        <div id="form" class="form">
           <h1 class="h3 mb-3">Acesse sua conta</h1>
 
           <form>
@@ -99,7 +99,10 @@
 
               <div id="email-validation" class="invalid-feedback">
                 Verifique o e-mail informado.
-              </div>            
+              </div> 
+              <div id="email-validation" class="valid-feedback">
+                E-mail válido.
+              </div>           
             </div>
 
             <div class="form-outline mb-4">
@@ -112,6 +115,7 @@
                 required
               />
               <div class="invalid-feedback">Verifique sua senha.</div>
+              <div class="valid-feedback">Senha válida</div>
             </div>
                   
             <div class="row mb-4">
@@ -127,7 +131,7 @@
             </div>
             
             <div class="input-group mt5 mb-1">
-            <input onclick='home.html' type='submit' value="Entrar" formaction='home.html' class='btn btn-primary theme-btn'></input>        
+            <input onclick='home.html' type='submit' value="Entrar" formaction='home.html' class='btn btn-primary theme-btn w-100'></input>        
           </div>
 
           <div class="row mb-4"></div>

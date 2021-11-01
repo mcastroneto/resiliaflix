@@ -79,10 +79,10 @@
       </nav>
     </header>
 
-    <main class="container">  
+    <main class="d-flex justify-content-center">  
 
-      <div class="col-lg-4 col-md-8 col-sm-10 col-12 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
-        <div id="form" class="col-lg-12 col-md-12 col-sm-12 col-12 mx-lg-auto mx-md-auto mx-sm-auto mx-auto>
+      <div  class="form-group">
+        <div id="form" class="form">
           <h1 class="h3 mb-3">Recuperar senha</h1>
 
           <form>
@@ -99,12 +99,15 @@
 
               <div id="email-validation" class="invalid-feedback">
                 Verifique o e-mail informado.
-              </div>            
+              </div>  
+							<div id="email-validation" class="valid-feedback">
+                Clique em enviar.
+              </div>          
             </div>
 
                                         
             <div class="input-group mt5 mb-1">
-            <input type='submit' value="Enviar" class='btn btn-primary theme-btn'></input>        
+            <input type='submit' value="Enviar" class='btn btn-primary theme-btn w-100' formaction="javascript:alert('E-mail de recuperação enviado!')"></form></input>        
           </div>
 
           <div class="row mb-4"></div>
