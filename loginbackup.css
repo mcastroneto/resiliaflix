@@ -19,16 +19,3 @@
 #IBGE {
   display: none;
 }
-
-body {
-  background: #642b73;
-  background: -webkit-linear-gradient(to right, #c6426e, #642b73);
-  background: linear-gradient(to right, #c6426e, #642b73);
-}
-
-#form {
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 5%;
-}
