@@ -1,3 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+}
+
 @media (min-width: 768px) {
   .home--filmes {
     width: 25%;
@@ -11,6 +35,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer-top {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .footer-bottom,
+  .footer-social {
+    text-align: center;
   }
 }
 
@@ -27,11 +59,128 @@
   padding: 20px;
   margin-top: 5%;
 }
-
 h1 {
+  text-align: center;
+}
+
+h2 {
   text-shadow: 2px 2px #000000;
 }
 
 #assine {
   text-shadow: 2px 2px #000000;
+}
+
+/***** Footer *****/
+
+.footer-top {
+  padding: 60px 0;
+  background: #333;
+  text-align: left;
+  color: #aaa;
+  margin-top: 3%;
+}
+.footer-top h3 {
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.footer-about img.logo-footer {
+  max-width: 74px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.footer-about p a {
+  color: #aaa;
+  border-bottom: 1px dashed #666;
+}
+.footer-about p a:hover,
+.footer-about p a:focus {
+  color: #fff;
+  border-color: #aaa;
+}
+
+.footer-contact p {
+  word-wrap: break-word;
+}
+.footer-contact i {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #666;
+}
+.footer-contact p a {
+  color: #aaa;
+  border-bottom: 1px dashed #666;
+}
+.footer-contact p a:hover,
+.footer-contact p a:focus {
+  color: #fff;
+  border-color: #aaa;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  color: #777;
+  border: 0;
+}
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #aaa;
+  border: 0;
+}
+.footer-social i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  padding: 15px 0;
+  background: #444;
+  text-align: left;
+  color: #aaa;
+}
+
+.footer-copyright p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.footer-copyright a {
+  color: #fff;
+  border: 0;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  color: #aaa;
+  border: 0;
+}
+
+/* footer navbar */
+.navbar {
+  padding: 0;
+  background: #444;
+  backface-visibility: hidden;
+}
+
+.navbar-dark .navbar-nav {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  border: 0;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #aaa;
+}
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #aaa;
+  outline: 0;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

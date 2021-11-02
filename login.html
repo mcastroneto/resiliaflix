@@ -12,6 +12,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="social/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -80,10 +81,11 @@
     </header>
 
     <main> 
+      <h1 classe="logoResilia">RESILIAFLIX</h1>
       <section class="d-flex justify-content-center">
         <div  class="form-group">
           <div id="formlog" class="form text-white">
-            <h1>Acesse sua conta</h1>
+            <h2>Acesse sua conta</h2>
               <br>      
               <form>      
                 <div class="form-outline mb-4">
@@ -137,22 +139,71 @@
         </section>      
      </main>
 
+     
+
+    <!-- Footer -->
     <footer>
-      <nav class="navbar mt-3 pt-3 navbar-light container-fluid">
-        <div id="wrap"
-          class="footer position-absolute fixed-bottom top-50 start-50 translate-middle"
-          id="navbarNavAltMarkup"
-        >
-          <div
-            class="navbar-nav d-flex flex-row justify-content-around pt-3 mt-3"
-          >
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Filmes</a>
-            <a class="nav-link" href="#">Contato</a>
-          </div>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
+              <img class="logo-footer" src="assets/img/logo.png" alt="logo-footer" data-at2x="assets/img/logo.png">
+              <p>
+                Trabalho de conclusão de módulo para validar aprendizado em HTML, CSS E JavaScript.
+              </p>
+              <p><a href="#">Conheça o Grupo</a></p>
+                  </div>
+            <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+              <h3>Contato</h3>
+                  <p><i class="fa fa-map-marker"></i> Av. Mockup 110, São Paulo - SP</p>
+                  <p><i class="fa fa-phone"></i> (11) 0800-08800</p>
+                  <p><i class="fa fa-envelope"></i><a href="mailto:grupo5@resiliaflix.com.br">grupo5@resiliaflix.com.br</a></p>
+                  <p><i class="fa fa-skype"></i> Grupo5Resilia</p>
+                  </div>
+                  <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+                    <h3>Nossas redes</h3>
+                    <p>
+                      <a href="https://github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+                      <a href="https://www.facebook.com/resilia.br"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                      <a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>              
+                      <a href="https://www.instagram.com/resilia.br/"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                      <a href="http://pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    </p>
+                  </div>
+            </div>
         </div>
-      </nav>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+               <div class="col-md-5 footer-copyright">
+                    <p>&copy; Projeto realizado pelo <a href="contato.html">GRUPO 5</a></p>
+                  </div>
+               <div class="col-md-7 footer-menu">
+                    <nav class="navbar navbar-dark navbar-expand-md">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-center">
+                      <li class="nav-item">
+                          <a class="nav-link scroll-link" href="home.html">Início</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link scroll-link" href="esquecisenha.html">Ajuda</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link scroll-link" href="#contato.html">Contato</a>
+                      </li>                      
+                  </ul>
+              </div>
+          </nav>
+                  </div>
+             </div>
+        </div>
+      </div>
     </footer>
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
