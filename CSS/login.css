@@ -5,6 +5,8 @@ body {
 
 main {
   margin-top: 100px;
+  margin-bottom: 50px;
+  min-height: 400px;
 }
 
 #formlog {
