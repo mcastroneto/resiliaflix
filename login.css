@@ -21,19 +21,17 @@
   display: none;
 }
 
-body {
-  background: #642b73;
-  background: -webkit-linear-gradient(to right, #c6426e, #642b73);
-  background: linear-gradient(to right, #c6426e, #642b73);
-}
-
-#form {
-  background-color: rgba(0, 0, 0, 0.5);
+#formlog {
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   padding: 20px;
   margin-top: 5%;
 }
 
-.h1 {
-  text-color: blanchedalmond;
+h1 {
+  text-shadow: 2px 2px #000000;
+}
+
+#assine {
+  text-shadow: 2px 2px #000000;
 }
