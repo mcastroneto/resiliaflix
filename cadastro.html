@@ -8,110 +8,116 @@
 		<title>ResiliaFlix</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link href="/CSS/cadastro.css" rel="stylesheet">
-		<link href="/CSS/navbar.css" rel="stylesheet">
+		<link href="/CSS/header.css" rel="stylesheet">
 		<link href="/CSS/footer.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery.min.js"></script>
 	</head>
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">RESILIAFLIX</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="cadastro.html">Cadastro</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="login.html">Entre</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="login.html">Contato</a>
-							</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Melhores escolhas
-									</a>
-									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="#">Ação</a></li>
-										<li><a class="dropdown-item" href="#">Comédia</a></li>
-										<li><a class="dropdown-item" href="#">Terror</a></li>
-										<li><a class="dropdown-item" href="#">Infantil</a></li>
-									</ul>
-								</li>
-						</ul>
-						<form class="d-flex">
-							<input class="form-control me-2" type="search" placeholder="O que deseja assistir?" aria-label="Search">
-							<button class="btn btn-outline-success" type="submit">Procurar</button>
-						</form>
-					</div>
-				</div>
-			</nav>
-		</header>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid fixed">
+			<img class=logohead src="Imagens/imagens_login/logo.png" alt="Logo Resilia Flix">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon">              
+			  </span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link active" 
+					 aria-current="page" 
+					 href="#">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="cadastro.html">Cadastro</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="login.html">Entre</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="contato.html">Contato</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Melhores escolhas</a>
+				</li>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li>
+					  <a class="dropdown-item" href="#">Ação</a>
+					</li>
+					<li>
+					  <a class="dropdown-item" href="#">Comédia</a>
+					</li>
+					<li><a class="dropdown-item" href="#">Terror</a></li>
+					<li><a class="dropdown-item" href="#">Infantil</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="O que deseja assistir?" aria-label="Search"/>
+				<button class="btn btn btn-danger" type="submit">Procurar                
+				</button>
+			  </form>
+		  </div>
+		</nav>  
+	  </header>
 		<main class="main--cadastro mx-auto w-50">
 			<form id="formExemplo" data-toggle="validator" role="form">
 				<div class="row">
 					<div class="form-group col">
-						<label for="textNome" class="control-label">Nome</label>
+						<label for="textNome" class="control-label nome--campo">Nome</label>
 						<input id="textNome" class="form-control" placeholder="Digite seu Nome" type="text" required>
 					</div>
 					<div class="form-group col-auto">
-						<label for="CPF" class="control-label">CPF</label>
+						<label for="CPF" class="control-label nome--campo">CPF</label>
 						<input id="campo" class="form-control" placeholder="Digite seu CPF" type="text" name="cpf" maxlength="14" onkeypress="formatar('###.###.###-##', this);" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Somente os números" required>
 					</div>
 				</div>
 								
 				<div class="form-group">
-				  <label for="inputEmail" class="control-label">Email</label>
-				  <input id="inputEmail" class="form-control" placeholder="Digite seu e-mail" type="email" 
+				  <label for="inputEmail" class="control-label nome--campo">Email</label>
+				  <input id="email" class="form-control" placeholder="Digite seu e-mail" type="email" 
 					data-error="Por favor, informe um e-mail correto." required>
 				  <div class="help-block with-errors"></div>
 				</div>
 				
 				<div class="row">
 					<div class="form-group col">
-					<label for="inputPassword" class="control-label">Senha</label>
-					<input type="password" class="form-control" id="inputPassword" placeholder="Digite sua senha"  
-						data-minlength="6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mínimo de 6 dígitos"
+					<label for="inputPassword" class="control-label nome--campo">Senha</label>
+					<input type="password" class="form-control" id="password" placeholder="Digite sua senha"  
+						data-minlength="6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mínimo de 8 dígitos, 1 maiúsculo e 1 caractere especial."
 						required>
 					</div>
 					<div class="form-group col">
-					<label for="inputConfirm" class="control-label">Confirme a senha</label>
+					<label for="inputConfirm" class="control-label nome--campo">Confirme a senha</label>
 					<input type="password" class="form-control" id="inputConfirm" placeholder="Confirme sua Senha" 
-						data-match="#inputPassword" data-match-error="Atenção! As senhas não estão iguais." required>
+						data-match="#password" data-match-error="Atenção! As senhas não estão iguais." required>
 					<div class="help-block with-errors"></div>
 					</div>
 				</div>
 				
 				<div method="get" action=".">
 					<div class="form-group">
-						<label>Digite seu CEP<input class= "form-control" placeholder= "CEP" name="cep" type="text" id="cep" value="" maxlength="9" size="12" onblur="pesquisacep(this.value);" /></label>
+						<label class="nome--campo">Digite seu CEP<input class= "form-control" placeholder= "CEP" name="cep" type="text" id="cep" value="" maxlength="9" size="12" onblur="pesquisacep(this.value);" /></label>
 					</div>
 					<div class="form-group row">
-						<label class = "col">Logradouro<input class= "form-control" name="rua" type="text" id="rua" required/></label>
-						<label class = "col-auto">Número<input class= "form-control" name="número" type="text" id="número" required/></label>
+						<label class = "col nome--campo">Logradouro<input class= "form-control" name="rua" type="text" id="rua" required/></label>
+						<label class = "col-auto nome--campo">Número<input class= "form-control" name="número" type="text" id="número" required/></label>
 					</div>
 					<div class="form-group row">
-						<label class = "col">Complemento<input class= "form-control" name="rua" type="text" id="complemento"/></label>
-						<label class = "col">Bairro<input class= "form-control" name="bairro" type="text" id="bairro" required/></label>
+						<label class = "col nome--campo">Complemento<input class= "form-control" name="rua" type="text" id="complemento"/></label>
+						<label class = "col nome--campo">Bairro<input class= "form-control" name="bairro" type="text" id="bairro" required/></label>
 					</div>
 					<div class="form-group row">
-						<label class = "col">Cidade<input class= "form-control" name="cidade" type="text" id="cidade" size="60"/></label>
-						<label class = "col-auto">Estado<input class= "form-control" name="uf" type="text" id="uf" size="4"/></label>
+						<label class = "col nome--campo">Cidade<input class= "form-control" name="cidade" type="text" id="cidade" size="60"/></label>
+						<label class = "col-auto nome--campo">Estado<input class= "form-control" name="uf" type="text" id="uf" size="4"/></label>
 					</div>								
 							<label id = "IBGE">IBGE:
 							<input name="ibge" type="text" id="ibge" size="8" /></label>
 				</div>
 				
-				<div class="form-group mb-3">
+				<div class="form-group mb-3 nome--campo">
 					<div class="checkbox">
 					  <label>
-						<input type="checkbox" data-error="Você deve marcar este campo!" required> Marque aqui se você está de acordo com a nossa <a style="color:black;" href="http://www.resilia.com.br">política de privacidade.</a>
+						<input type="checkbox" data-error="Você deve marcar este campo!" required> Marque aqui se você está de acordo com a nossa <a style="color:blanchedalmond" href="http://www.resilia.com.br">política de privacidade.</a>
 					  </label>
 					  <div class="help-block with-errors"></div>
 					</div>
@@ -119,33 +125,58 @@
 				<div class="cadastro--planos d-flex flex-column flex-md-row justify-content-md-around">
 					<div class="plano--anual form-check form-check-inline">
 						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-						<label class="form-check-label" for="inlineRadio1">Plano Anual</label>
+						<label class="form-check-label nome--campo" for="inlineRadio1">Plano Anual</label>
 					</div>
 					<div class="plano--mensal form-check form-check-inline">
 						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-						<label class="form-check-label" for="inlineRadio2">Plano Mensal</label>
+						<label class="form-check-label nome--campo" for="inlineRadio2">Plano Mensal</label>
 					</div>
 				</div>
-			  	<div class="form-group mt-3">
-					<button type="submit" class="btn btn-primary">Enviar</button>
+			  	<div class="form-group mt-3 mx-auto">
+					<input type='submit' value="Enviar" formaction='home.html' class='btn btn-primary theme-btn col-6 mx-auto button--cadastro'></input>
 			  	</div>
 
 			</form>
 		</main>
 		<footer>
-			<nav class="navbar mt-3 pt-3 navbar-light container-fluid">
-				<div class="footer position-absolute top-50 start-50 translate-middle" id="navbarNavAltMarkup">
-					<div class="navbar-nav d-flex flex-row justify-content-around pt-3 mt-3">
-						<a class="nav-link" href="#">Home</a>
-						<a class="nav-link" href="#">Filmes</a>
-						<a class="nav-link" href="#">Contato</a>
+			<div class="footer-top bg-dark">
+			  <div class="container row">          
+				<div class="text-secondary col-lg-4 bg-dark footer-about wow fadeInUp">
+				  <img class="logo-footer" src="Imagens/imagens_login/logo.png" alt="logo-footer" />
+					<p>Trabalho de conclusão de módulo para validar aprendizado em HTML, CSS E JavaScript.</p>
+					<p><a href="#">Conheça o Grupo</a></p>
+				  </div>
+				  <div class="text-secondary col-lg-4 bg-dark offset-lg-1 footer-contact wow fadeInDown">
+					<h3>Contato</h3>
+						<p><i class="fa fa-map-marker"></i> Av. Mockup 110, São Paulo - SP</p>
+						<p><i class="fa fa-phone"></i> (11) 0800-08800</p>
+						<p><i class="fa fa-envelope"></i><a href="mailto:grupo5@resiliaflix.com.br">grupo5@resiliaflix.com.br</a></p>
+						<p><i class="fa fa-skype"></i> Grupo5Resilia</p>
+						</div>
+						<div class="col-lg-3 bg-dark footer-social wow fadeInUp text-secondary">
+						  <h3>Nossas redes</h3>
+						  <p>
+							<a href="https://github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com/resilia.br"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+							<a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>              
+							<a href="https://www.instagram.com/resilia.br/"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+							<a href="http://pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+						  </p>
+						</div>            
+					  </div>
 					</div>
+				  <div class="footer-bottom bg-muted">
+				<div class="container row">            
+					<div class="footer-copyright">
+					  <p>&copy;<a href="contato.html">Projeto realizado pelo GRUPO 5</a></p>                  
+				   </div>        
 				</div>
-			</nav>
-		</footer>
+		  </footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha512-dTu0vJs5ndrd3kPwnYixvOCsvef5SGYW/zSSK4bcjRBcZHzqThq7pt7PmCv55yb8iBvni0TSeIDV8RYKjZL36A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="viacep.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js" integrity="sha512-Mf4TMPxK1TE3jNpbt6cFIM9Rz+Ezs+mvG6SvEKq2ZYEAix8QNtbseSccunI4efVNtvfzrRmd8vVwRRBgYMtfnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="js/login.js"></script>
+		<script src="js/validador.js"></script>
 	</body>
 </html>
