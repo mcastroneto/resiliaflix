@@ -1,0 +1,147 @@
+@font-face{
+    font-family: "BebasNeue";
+    src: url('BebasNeue.OTF');
+}
+
+.total{
+    background-color: #000000;
+    padding-bottom: 20%;
+}
+
+.titulo{
+    font-family: "BebasNeue";
+    src: url('AGENCYR.TTF');
+    font-size: 60px;
+    color: #C71E21;
+    padding-left:7%;
+    border:none;
+}
+
+.descrição1{
+    color: #ffffff;
+    padding-left: 5%;
+    border:none;
+}
+
+.descrição2{
+    color: #ffffff;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-bottom: 1%;
+}
+
+.botao-play{
+    font-family: arial;
+    font-size: 40px;
+    border:none;
+    cursor: pointer;
+    margin-left: 7%;
+    height: 70px;
+    width:70px;
+    line-height: 35px;
+    border-radius: 35px;
+    background: #C71E21;
+}
+
+.botao-play:hover{
+    background: #df6163;
+    /* font-family: arial;
+    font-size: 40px;
+    border:none;
+    cursor: pointer;
+    margin-left: 5%;
+    height: 70px;
+    width:70px;
+    line-height: 35px;
+    border-radius: 35px; */
+}
+
+.botao-plus{
+    font-family: arial;
+    font-size: 30px;
+    border:none;
+    cursor: pointer;
+    margin-left: 2%;
+    height: 60px;
+    width:60px;
+    line-height: 30px;
+    border-radius: 30px;
+    background: #333333;
+}
+
+.botao-plus:hover{
+    background: #5d5656;
+    /* font-family: arial;
+    font-size: 40px;
+    border:none;
+    cursor: pointer;
+    margin-left: 5%;
+    height: 70px;
+    width:70px;
+    line-height: 35px;
+    border-radius: 35px; */
+}
+
+.g{
+    color: #000000;
+}
+
+.trailer{
+    font-family: "BebasNeue";
+    src: url('AGENCYR.TTF');
+    color: #ffffff;
+    font-size: 30px;
+    padding-left:5%;
+    padding-top:6%;
+    border:none;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.video{
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+.botao-trailer{
+    font-family: "BebasNeue";
+    src: url('AGENCYR.TTF');
+    font-size: 20px;
+    background: #C71E21;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    margin-left: 2%;
+
+    /* font-family: "BebasNeue";
+    src: url('AGENCYR.TTF');
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    margin-left: 5%;
+    height: 50px;
+    width:120px;
+    line-height: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #333333; */
+}
+
+.botao-trailer:hover{
+    background: #df6163;
+    /* font-family: arial;
+    font-size: 40px;
+    border:none;
+    cursor: pointer;
+    margin-left: 5%;
+    height: 70px;
+    width:70px;
+    line-height: 35px;
+    border-radius: 35px; */
+}
