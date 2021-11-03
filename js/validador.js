@@ -19,6 +19,7 @@ function validateEmail(e) {
     return false;
   }
 }
+
 function validatePassword() {
   const password = document.querySelector('#password');
   const re = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})(?=.*[!@#$%^&*])/;
