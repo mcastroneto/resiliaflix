@@ -26,7 +26,12 @@
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
-
+.logo-footer{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
 .footer-about p a {
   color: #aaa;
   border-bottom: 1px dashed #666;
