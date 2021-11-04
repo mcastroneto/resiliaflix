@@ -1,11 +1,7 @@
-
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  
-  .header,
+.buscador{
+  margin-top: 80px;
+}
+ 
   .marketing,
   .footer {
     padding-right: 15px;
@@ -22,19 +18,6 @@ body {
     line-height: 40px; 
   }
   
-  
-  .footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
-  }
-  
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 730px;
-    }
-  }
   .container-narrow > hr {
     margin: 30px 0;
   }
@@ -52,7 +35,7 @@ body {
   }
   
   
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     
     .header,
     .marketing,

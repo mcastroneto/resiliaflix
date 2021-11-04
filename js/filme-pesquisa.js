@@ -1,7 +1,7 @@
 document.getElementById("formulario").addEventListener("submit", pesquisarFilme);
 
 function pesquisarFilme(e) {
-    var filmePesquisa = document.getElementById('pesquisar').value;
+    var filmePesquisa = document.getElementById('searchFilme').value;
     buscarfilmes(filmePesquisa);
     e.preventDefault();
 }
