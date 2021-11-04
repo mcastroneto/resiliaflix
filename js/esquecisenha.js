@@ -1,8 +1,7 @@
 document.querySelector('#email').addEventListener('blur', validateEmail);
 
-const reSpaces = /^\S*$/;
-
 function validateEmail(e) {
+  const reSpaces = /^\S*$/;
   const email = document.querySelector('#email');
   const re = /^([a-zA-Z0-9_\-?\.?]){3,}@([a-zA-Z]){3,}\.([a-zA-Z]){2,5}$/;
   const ree = /^([a-zA-Z0-9_\-?\.?]){3,}@([a-zA-Z]){3,}\.([a-zA-Z]){2,5}\.([a-zA-Z]){2,5}$/;
