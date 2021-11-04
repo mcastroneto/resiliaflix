@@ -70,8 +70,7 @@ function buscarfilmes(filmePesquisa){
                   <a href="index.html" target="_blank" class="btn btn-default" pull-right"> Voltar a pesquisar </a>
 
                   </div>
-              </div>
-    `
+              </div>`
     document.getElementById('filmes').innerHTML = mostraFilme;
 
   })
