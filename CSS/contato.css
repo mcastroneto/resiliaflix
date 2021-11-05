@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .carol-img {
   height: 200px;
   width: 200px;
@@ -31,6 +32,13 @@
   width: 200px;
   background-size: contain;
   border-radius: 50%;
+=======
+.imagens {
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	border-radius: 50%;
+>>>>>>> ef242caacffe6a22586720bca5dbf3b538335e85
 }
 
 .grupo {

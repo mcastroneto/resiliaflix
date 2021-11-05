@@ -15,59 +15,40 @@
 	<body>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<div class="container-fluid fixed">
-				<img class=logohead src="/Imagens/imagens_login/logo.png" alt="Logo Resilia Flix">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon">              
-				</span>
-				</button>
+			  <div class="container-fluid fixed">
+				<img class="logohead" src="/Imagens/imagens_login/logo.png" alt="Logo Resilia Flix">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-					<a class="nav-link active" 
-						aria-current="page" 
-						href="/home.html">Home</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="/cadastro.html">Cadastro</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="/login.html">Entre</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="/contato.html">Contato</a>
-					</li>
-					<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Melhores escolhas</a>
-					</li>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li>
-						<a class="dropdown-item" href="#">Ação</a>
-						</li>
-						<li>
-						<a class="dropdown-item" href="#">Comédia</a>
-						</li>
-						<li><a class="dropdown-item" href="#">Terror</a></li>
-						<li><a class="dropdown-item" href="#">Infantil</a></li>
-					</ul>
-					</li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="home.html">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="cadastro.html">Cadastro</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="login.html">Entre</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contato.html">Contato</a>
+				  </li>
 				</ul>
 				<form class="d-flex">
-					<input class="form-control me-2" type="text" name="searchFilme" id="searchFilme" placeholder="O que deseja assistir?" aria-label="Search"/>
-					<button class="btn-btn-primary btn btn-danger">Pesquisar</button>
+				  <input class="form-control me-2" type="search" placeholder="O que deseja assistir?" aria-label="Search"/>
+				  <a class="btn-btn-primary btn btn-danger btn-success" type="submit" id="searchFilme" href="/pagina_pesquisa/paginadepesquisa.html" target="_blank">Pesquisar</a>
 				</form>
-			</div>
-			</nav>  
-		</header>
+			  </div>
+			</nav>
+		  </header>
 
 		<main>
-			<section class="pesquisa--filme">
-				<div class="buscador container header ckearfix">
+			<section class="pesquisa--filme d-flex mb-2 mb-md-5 flex-column align-items-center">
+				<div class="buscador container header clearfix">
 				<h3>O que deseja assistir hoje?</h3>
 				</div>
-				<div class="jumbotron colunas-largas-12">
-					<form class="input-group" id="formulario">
-					<input type="text" name="pesquisar" class="form-control" id="pesquisar" placeholder="Digite o nome do filme...">    
+				<div class="colunas-largas-12 w-75">
+					<form class="input-group d-flex flex-column flex-md-row align-items-center" id="formulario" >
+					<input type="text" name="pesquisar" class="form-control w-100 mb-2" id="pesquisar" placeholder="Digite o nome do filme...">    
 						<spam class="input-group-btn">
 							<button class="btn-btn-primary btn btn-danger" type="submit">Pesquisar</button>
 							<button class="btn-btn-primary btn btn-primary" type="reset">Limpar</button>
@@ -109,7 +90,7 @@
 			</div>
 			<div class="footer-bottom bg-muted">
 				<div class="container row footer-copyright">
-					<p>&copy;<a href="/contato.html">Projeto realizado pelo GRUPO 5</a></p>                  
+					<p>&copy;<a href="contato.html">Projeto realizado pelo GRUPO 5</a></p>                  
 				</div>        
 			</div>
 		</footer>

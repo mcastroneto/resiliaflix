@@ -8,6 +8,7 @@
 
 body{
 background: #000;
+border:none;
 }
 
 header{
@@ -96,8 +97,9 @@ header .Logo img{
   top:0;
   left:0;
   width: 100%;
-  min-height:600px; 
+  min-height:500px; 
   object-fit: cover;
+  border: none;
   
 }
 
@@ -274,6 +276,24 @@ header .Logo img{
 }
 
 
+.titulohome{
+  margin-left: 7%;
+  color:blanchedalmond;
+  font-size: 30px;
+  font-family: "BebasNeue";
+  src: url('BebasNeue.OTF');
+  padding-top:80px;
+}
+
+
+.image123{
+  padding-left: 10%;
+  padding-bottom: 20px;
+}
+
+.categ{
+  margin-left: 5%;
+}
 
 
 
