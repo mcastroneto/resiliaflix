@@ -1,42 +1,9 @@
-.carol-img {
+.imagens {
 	height: 200px;
 	width: 200px;
-	background-image: url(/Imagens/Perfis/carol.jpeg);
 	background-size: contain;
 	border-radius: 50%;
-  }
-
-.marcio-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/marcio.png);
-	background-size: contain;
-	border-radius: 50%;
-  }
-
-.wendel-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/wendel.jpeg);
-	background-size: contain;
-	border-radius: 50%;
-  }
-
-.ruan-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/ruan.jpeg);
-	background-size: contain;
-	border-radius: 50%;
-  }
-
-.honer-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/honer.jpeg);
-	background-size: contain;
-	border-radius: 50%;
-  }
+}
 
   .grupo{
 	  display: flex;
