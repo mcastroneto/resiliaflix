@@ -1,64 +1,59 @@
 .carol-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/carol.jpeg);
-	background-size: contain;
-	border-radius: 50%;
-  }
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  border-radius: 50%;
+}
 
 .marcio-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/marcio.png);
-	background-size: contain;
-	border-radius: 50%;
-  }
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  border-radius: 50%;
+}
 
 .wendel-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/wendel.jpeg);
-	background-size: contain;
-	border-radius: 50%;
-  }
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  border-radius: 50%;
+}
 
 .ruan-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/ruan.jpeg);
-	background-size: contain;
-	border-radius: 50%;
-  }
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  border-radius: 50%;
+}
 
 .honer-img {
-	height: 200px;
-	width: 200px;
-	background-image: url(/Imagens/Perfis/honer.jpeg);
-	background-size: contain;
-	border-radius: 50%;
-  }
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  border-radius: 50%;
+}
 
-  .grupo{
-	  display: flex;
-	  flex-direction: column;
-  }
+.grupo {
+  display: flex;
+  flex-direction: column;
+}
 
-  .perfil{
-	  margin: 50px 0;
-	  padding: 0;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-  }
+.perfil {
+  margin: 50px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .perfil-text{
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: center;
-	  margin-left: 30px;
-  }
-  .text{
-	  color:ghostwhite;
-	  font-size: x-large;
-  }
+.perfil-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.text {
+  color: ghostwhite;
+  font-size: x-large;
+}
