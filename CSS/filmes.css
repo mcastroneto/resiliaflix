@@ -119,3 +119,38 @@ main{
 .fbotao-trailer:hover{
     background: #BB2D3B;
 }
+
+.imgContainer{
+    float:left;
+  }
+
+
+  .titulohomea{
+    margin-left: 7%;
+    color:blanchedalmond;
+    font-size: 30px;
+    font-family: "BebasNeue";
+    src: url('BebasNeue.OTF');
+    padding-top:10%;
+  }
+
+  .titulohome{
+    margin-left: 7%;
+    color:blanchedalmond;
+    font-size: 30px;
+    font-family: "BebasNeue";
+    src: url('BebasNeue.OTF');
+    padding-top:12%;
+  }
+  
+  
+  .image123{
+    padding-left: 10%;
+    padding-bottom: 150px;
+  }
+  
+  .categ{
+    margin-left: 5%;
+  }
+  
+  
