@@ -1,11 +1,11 @@
-document.getElementById("formulario").addEventListener("submit", pesquisarFilme);
+document.getElementById("formulariobar").addEventListener("submit", pesquisarFilme);
 
 function pesquisarFilme(e) {
-    var filmePesquisa = document.getElementById('searchFilme').value;
+    var filmePesquisaAux = document.getElementById('searchFilme').value;
+    sessionStorage.setItem('filmePesquisa', filmePesquisaAux);
     window.location = 'paginadepesquisa.html';
     buscarfilmes(filmePesquisa);
     e.preventDefault();
-    return false;
 }
 
 
