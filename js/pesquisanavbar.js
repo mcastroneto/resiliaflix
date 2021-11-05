@@ -2,7 +2,7 @@ document.getElementById("formulario").addEventListener("submit", pesquisarFilme)
 
 function pesquisarFilme(e) {
     var filmePesquisa = document.getElementById('searchFilme').value;
-    window.location = '/pagina_pesquisa/paginadepesquisa.html';
+    window.location = 'paginadepesquisa.html';
     buscarfilmes(filmePesquisa);
     e.preventDefault();
     return false;
