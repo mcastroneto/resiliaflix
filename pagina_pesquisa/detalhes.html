@@ -10,72 +10,71 @@
 		<link href="/CSS/cadastro.css" rel="stylesheet">
 		<link href="/CSS/header.css" rel="stylesheet">
 		<link href="/CSS/footer.css" rel="stylesheet">
-        <link href="/CSS/paginapesquisa.css" rel="stylesheet">
+    <link href="/CSS/paginapesquisa.css" rel="stylesheet">
 	</head>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		  <div class="container-fluid fixed">
-			<img class=logohead src="/Imagens/imagens_login/logo.png" alt="Logo Resilia Flix">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon">              
-			  </span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-				  <a class="nav-link active" 
-					 aria-current="page" 
-					 href="#">Home</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="cadastro.html">Cadastro</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="login.html">Entre</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="contato.html">Contato</a>
-				</li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Melhores escolhas</a>
-				</li>
-				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li>
-					  <a class="dropdown-item" href="#">Ação</a>
-					</li>
-					<li>
-					  <a class="dropdown-item" href="#">Comédia</a>
-					</li>
-					<li><a class="dropdown-item" href="#">Terror</a></li>
-					<li><a class="dropdown-item" href="#">Infantil</a></li>
-				  </ul>
-				</li>
-			  </ul>
-			  <form class="d-flex">
-				<input class="form-control me-2" type="search" placeholder="O que deseja assistir?" aria-label="Search"/>
-				<button class="btn btn btn-danger" type="submit">Procurar                
-				</button>
-			  </form>
-		  </div>
-		</nav>  
-	  </header>
-    <body>
-    <div class="container">
-        <div class="header ckearfix"></div>
-        <h3>Buscar Filmes</h3>
-
-    <div class="container">
-        <div class="row" id="filmes"></div>
-    </div>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid fixed">
+        <img class=logohead src="/Imagens/imagens_login/logo.png" alt="Logo Resilia Flix">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">              
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" 
+            aria-current="page" 
+            href="/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Entre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Melhores escolhas</a>
+          </li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#">Ação</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Comédia</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Terror</a></li>
+            <li><a class="dropdown-item" href="#">Infantil</a></li>
+            </ul>
+          </li>
+          </ul>
+          <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="O que deseja assistir?" aria-label="Search"/>
+          <button class="btn btn btn-danger" type="submit">Procurar                
+          </button>
+          </form>
+        </div>
+      </nav>  
+    </header>
+      
+      <div class="container-fluid">
+          <div class="header ckearfix"></div>
+          <h3>Buscar Filmes</h3>
+      <div class="container-fluid">
+          <div class="row" id="filmes"></div>
+      </div>
   
-    
     <footer>
         <div class="footer-top bg-dark">
           <div class="container-fluid row">          
             <div class="text-secondary col-md-4 bg-dark footer-about wow fadeInUp">
               <img class="logo-footer" src="/Imagens/imagens_login/logo.png" alt="logo-footer" />
                 <p>Trabalho de conclusão de módulo para validar aprendizado em HTML, CSS E JavaScript.</p>
-                <p><a href="#">Conheça o Grupo</a></p>
+                <p><a href="/contato.html">Conheça o Grupo</a></p>
             </div>
             <div class="text-secondary col-md-4 bg-dark offset-md-1 footer-contact wow fadeInDown">
               <h3>Contato</h3>
@@ -98,13 +97,11 @@
         </div>
         <div class="footer-bottom bg-muted">
           <div class="container row footer-copyright">
-              <p>&copy;<a href="contato.html">Projeto realizado pelo GRUPO 5</a></p>                  
+              <p>&copy;<a href="/contato.html">Projeto realizado pelo GRUPO 5</a></p>                  
           </div>        
         </div>
       </footer>
   
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha512-dTu0vJs5ndrd3kPwnYixvOCsvef5SGYW/zSSK4bcjRBcZHzqThq7pt7PmCv55yb8iBvni0TSeIDV8RYKjZL36A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
@@ -117,14 +114,12 @@
           crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       <script src="js/main.js"></script>
-      <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous">
-    </script>
-     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>mostraFilme();</script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"> </script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="/js/paginapesquisa.js"></script>
+      <script src="https://kit.fontawesome.com/03c3e7eb25.js" crossorigin="anonymous"></script>
+      <script>mostraFilme();</script>
     </body>
   </html>
   

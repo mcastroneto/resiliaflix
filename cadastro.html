@@ -10,7 +10,6 @@
 		<link href="/CSS/cadastro.css" rel="stylesheet">
 		<link href="/CSS/header.css" rel="stylesheet">
 		<link href="/CSS/footer.css" rel="stylesheet">
-		<link href="social/css/font-awesome.min.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<header>
@@ -119,7 +118,7 @@
 				<div class="form-group mb-3 nome--campo">
 					<div class="checkbox">
 					<label>
-						<input type="checkbox" data-error="Você deve marcar este campo!" required> Marque aqui se você está de acordo com a nossa <a style="color:blanchedalmond" href="http://www.resilia.com.br">política de privacidade.</a>
+						<input type="checkbox" data-error="Você deve marcar este campo!" required> Marque aqui se você está de acordo com a nossa <a style="color:blanchedalmond" href="http://www.resilia.com.br" target="_blank">política de privacidade.</a>
 					</label>
 					<div class="help-block with-errors"></div>
 					</div>
@@ -127,11 +126,11 @@
 				<div class="cadastro--planos d-flex flex-column flex-md-row justify-content-md-around">
 					<div class="plano--anual form-check form-check-inline">
 						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-						<label class="form-check-label nome--campo" for="inlineRadio1">Plano Anual</label>
+						<a href="Imagens/Planos/anual.jpeg" class="form-check-label nome--campo" for="inlineRadio1">Plano Anual</a>
 					</div>
 					<div class="plano--mensal form-check form-check-inline">
 						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-						<label class="form-check-label nome--campo" for="inlineRadio2">Plano Mensal</label>
+						<a href="/Imagens/Planos/mensal.jpeg" class="form-check-label nome--campo" for="inlineRadio2">Plano Mensal</a>
 					</div>
 				</div>
 				<div class="form-group mt-3 mx-auto">
@@ -147,7 +146,7 @@
 				<div class="text-secondary col-md-4 bg-dark footer-about wow fadeInUp">
 				<img class="logo-footer" src="Imagens/imagens_login/logo.png" alt="logo-footer" />
 					<p>Trabalho de conclusão de módulo para validar aprendizado em HTML, CSS E JavaScript.</p>
-					<p><a href="#">Conheça o Grupo</a></p>
+					<p><a href="/contato.html">Conheça o Grupo</a></p>
 				</div>
 				<div class="text-secondary col-md-4 bg-dark offset-md-1 footer-contact wow fadeInDown">
 				<h3>Contato</h3>
@@ -170,7 +169,7 @@
 			</div>
 			<div class="footer-bottom bg-muted">
 			<div class="container row footer-copyright">
-				<p>&copy;<a href="contato.html">Projeto realizado pelo GRUPO 5</a></p>                  
+				<p>&copy;<a href="/contato.html">Projeto realizado pelo GRUPO 5</a></p>                  
 			</div>        
 			</div>
 		</footer>
@@ -182,5 +181,6 @@
 		<script src="js/login.js"></script>
 		<script src="js/validador.js"></script>
 		<script src="js/validacpf.js"></script>
+		<script src="https://kit.fontawesome.com/03c3e7eb25.js" crossorigin="anonymous"></script>
 	</body>
 </html>
